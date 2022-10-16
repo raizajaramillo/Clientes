@@ -13,7 +13,7 @@ if (isset($_POST['submit'])) {
     $result = mysqli_query($conn, $sql);
 
     if ($result) {
-        header("Location: index.php?msg=Informacion actualizada exitosamente");
+        header("Location: ingreso.php?msg=Informacion actualizada exitosamente");
     } else {
         echo "Fallo: " . mysqli_error($conn);
     }

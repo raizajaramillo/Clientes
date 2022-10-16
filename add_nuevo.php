@@ -30,10 +30,7 @@ if (isset($_POST['submit'])) {
 <!DOCTYPE html>
 <html>
 
-<header class="container-fluid bg-primary d-flex justify-content-center">
-    <span id="boot-icon" class="bi bi-whatsapp" style="font-size: 30px; color: rgb(255, 255, 255);"></span>
-    <p class="text-light mb-0 p-2 fs-6"> Contáctenos +57 300 526 5058</p>
-</header>
+
 
 <head>
     <meta charset="utf-8">
@@ -43,7 +40,10 @@ if (isset($_POST['submit'])) {
 
     <!-- Boostrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <title> Clientes </title>
+    <link rel="stylesheet" href="../carpeta css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -51,9 +51,34 @@ if (isset($_POST['submit'])) {
 </head>
 
 <body>
-    <nav class="navbar navbar-light justify-content-center fs-3 mb-5 bg-primary text-white">
-        Clientes
+
+    </nav> -->
+    <!-------------------------Navbar------------------------------------>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
+        <div class="container-fluid">
+            <img src="Imagenes\imagen4.jpeg" class="img-fluid" alt="Responsive image" style="max-width: 98px;max-height: 98px ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.php"> Inicio </a>
+                    </li>
+
+                </ul>
+
+
+
+            </div>
+        </div>
     </nav>
+
+
+
+
+
+
     <div class="container">
         <div class="text-center mb-4">
             <h3> Agregar Nuevo Cliente </h3>
@@ -62,7 +87,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <div class="container d-flex justify-content-center">
-        <form action="" method="POST" style="width: 50vw; min-width: 300px;">
+        <form action="ingreso.php" method="POST" style="width: 50vw; min-width: 300px;">
             <div class="row">
                 <div class="col">
                     <label class="form-label"> Nombres </label>
@@ -89,7 +114,7 @@ if (isset($_POST['submit'])) {
                 </div>
                 <div>
                     <button type="submit" class="btn btn-success" name="submit"> Guardar </button>
-                    <a href="index.php" class="btn btn-danger"> Cancelar </a>
+                    <a href="ingreso.php" class="btn btn-danger"> Cancelar </a>
                 </div>
         </form>
     </div>

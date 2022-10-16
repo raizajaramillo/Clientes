@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*------------------------------- Menu---------------------------------- */
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+/*------------------------------- Slider/Carrusel de Imagenes---------------------------------- */
+.carousel-inner{
+    max-height: 30rem;
+}
+
+/*------------------------------- Media Queries Pantalla Ancha ---------------------------------- */
+@media (max-width:768px){
+    #intro, #equipo{
+        width: 90% !important;
+    }
+    .categorias-fila{
+        width: 100% !important;
+        text-align: center;
+    }
+}
+
+/*------------------------------- Media Queries Pantalla Pequena ---------------------------------- */
+
+@media (max-width: 576px){
+    .icono-wrap{
+        flex-wrap: wrap;
+        justify-content: center !important;
+    }
+}
+
+/*------------------------------- Mapa ---------------------------------- */
+
+#local {
+    background-color: #f3f3f3;
+    padding-bottom: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    width: 50%;
+    margin-left: 100px;
+    padding-top: 150px;
+
+}
+
+@media (max-width: 1200px){
+    #local{
+        flex-wrap: wrap;
+        padding-top: 30px;
+    }
+    .wrapper{
+        width: 90%;
+        margin: auto;
+        padding-top: 50px;
+    }
+}
+
+/* ------------- Colores de secciones ------------*/
+.seccion1 {
+    background-color: #d3dff7c9;
+}
+.seccion2 {
+    background-color: #e4dede;
+}
+
+
+
+
+/* .mapa {
+    background: url();
+    width: 100%:;
+    height: 500px;
+} */
+
+
+/* .img-fluid {
+    max-width: 90px;
+    max-height: 90px;
+} */

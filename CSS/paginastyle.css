@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*------------------------------- Menu---------------------------------- */
+#menu li > a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #3f3f3f;
+}
+
+#menu form > button{
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+/*------------------------------- Slider/Carrusel de Imagenes---------------------------------- */
+.carousel-inner{
+    max-height: 30rem;
+}
+
+/*------------------------------- SMedia Queries Pantalla Ancha ---------------------------------- */
+@media (max-width:768px){
+    #intro{
+        width: 90% !important;
+    }
+}
+
+/* ------------- Colores de secciones ------------*/
+.seccion1 {
+    background-color: #d3dff7c9;
+}
+.seccion2 {
+    background-color: #e4dede;
+}
+
+
+
+/* .img-fluid {
+    max-width: 90px;
+    max-height: 90px;
+} */
