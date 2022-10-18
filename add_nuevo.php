@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
 
 <body>
 
-    </nav> -->
+    </nav>
     <!-------------------------Navbar------------------------------------>
     <nav class="navbar navbar-expand-lg navbar-light bg-light p-3" id="menu">
         <div class="container-fluid">
@@ -87,7 +87,7 @@ if (isset($_POST['submit'])) {
     </div>
 
     <div class="container d-flex justify-content-center">
-        <form action="ingreso.php" method="POST" style="width: 50vw; min-width: 300px;">
+        <form action="" method="POST" style="width: 50vw; min-width: 300px;">
             <div class="row">
                 <div class="col">
                     <label class="form-label"> Nombres </label>
@@ -113,8 +113,8 @@ if (isset($_POST['submit'])) {
                     <label for="femenina" class="form-input-label"> Femenina </label>
                 </div>
                 <div>
-                    <button type="submit" class="btn btn-success" name="submit"> Guardar </button>
-                    <a href="ingreso.php" class="btn btn-danger"> Cancelar </a>
+                    <button id="btn" name="submit" class="btn btn-primary btn-primary-outline-success" type="submit"> Guardar </button>
+                    <button href="ingreso.php" class="btn btn-danger"> Cancelar </button>
                 </div>
         </form>
     </div>
